@@ -117,7 +117,7 @@
   </parameters>
   <!-- Colors FHD -->
   <colors>
-    <color name="background" value="#30000000" />
+    <color name="background" value="#20000000" />
     <color name="background10" value="#10000000" />
     <color name="background20" value="#20000000" />
     <color name="background30" value="#30000000" />
@@ -129,12 +129,14 @@
     <color name="blue" value="#000066cc" />
     <color name="blue2" value="#000051c0" />
     <color name="blue3" value="#000069fb" />
+    <color name="lightbluelabel" value="#000040c0" />
+    <color name="darkbluelabel" value="#00002672" />
     <color name="bluelabel" value="#00003399" />
     <color name="bluetitle" value="#0050bbff" />
     <color name="cyan" value="#0000ffff" />
     <color name="cyan1" value="#0000deff" />
     <color name="dark" value="#00303340" />
-    <color name="darkbluelabel" value="#00002672" />
+	<color name="darkgrey2" value="#00808080" />
     <color name="darkgrey" value="#00999999" />
     <color name="darkred" value="#00a00000" />
     <color name="extrdarkred" value="#21000000" />
@@ -142,10 +144,9 @@
     <color name="green" value="#0000cc00" />
     <color name="greenlight" value="#00a4c400" />
     <color name="grey" value="#00cccccc" />
-    <color name="grey1" value="#00a6a6a6" />
+	<color name="grey1" value="#00a6a6a6" />
     <color name="greytransparent" value="#60cecece" />
     <color name="lightblue" value="#0066ccff" />
-    <color name="lightbluelabel" value="#000040c0" />
     <color name="orange" value="#00ff6600" />
     <color name="red" value="#00ff0000" />
     <color name="redtransparent" value="#084c0000" />
@@ -220,7 +221,7 @@
   <!-- Restart Panel FHD -->
 <screen name="QuitMainloopScreen" position="0,0" backgroundColor="black" flags="wfNoBorder" size="1920,1080">
   <ePixmap pixmap="Blue-Line-OCT-4HDF/icons/start.png" zPosition="1" position="418,399" size="207,236" alphatest="blend" />
-  <ePixmap pixmap="Blue-Line-OCT-4HDF/icons/input_info.png" position="416,225" size="80,80" zPosition="4" alphatest="blend" />
+  <ePixmap pixmap="Blue-Line-OCT-4HDF/skin_default/icons/input_info.png" position="416,225" size="80,80" zPosition="4" alphatest="blend" />
   <widget name="text" position="656,335" size="800,400" font="Regular; 44" halign="center" backgroundColor="black" foregroundColor="white" transparent="1" />
   <eLabel position="397,201" size="2,550" backgroundColor="backgroundBlue" foregroundColor="cyan" />
   <eLabel position="1511,202" size="2,550" backgroundColor="backgroundBlue" foregroundColor="cyan" />
@@ -294,7 +295,7 @@
     <eLabel name="a" position="3,3" size="994,294" backgroundColor="background" zPosition="-9" />
     <widget name="text" position="25,121" size="955,60" font="Regular;42" valign="center" halign="center" backgroundColor="background" foregroundColor="grey" noWrap="0" transparent="1" />
     <widget name="input" position="23,211" size="955,60" halign="center" valign="center" font="Regular;42" backgroundColor="background" foregroundColor="white" transparent="1" />
-    <ePixmap pixmap="Blue-Line-OCT-4HDF/icons/input_info.png" position="28,20" size="80,80" alphatest="blend" />
+    <ePixmap pixmap="Blue-Line-OCT-4HDF/skin_default/icons/input_info.png" position="28,20" size="80,80" alphatest="blend" />
   </screen>
   <!-- Minute input FHD -->
   <screen name="MinuteInput" position="center,center" size="400,100" title="Seek">
@@ -1453,9 +1454,9 @@
   <!-- RemoveTimerQuestions FHD -->
   <screen name="RemoveTimerQuestion" position="360,240" size="1200,500" zPosition="10" title="Message" flags="wfNoBorder" borderColor="backgroundBlue" borderWidth="3" backgroundColor="background">
     <widget name="text" position="165,20" size="1020,140" font="Regular;35" valign="center" backgroundColor="background" foregroundColor="white" halign="center" />
-    <widget name="ErrorPixmap" pixmap="Blue-Line-OCT-4HDF/icons/input_error.png" position="45,50" size="80,80" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="Blue-Line-OCT-4HDF/icons/input_question.png" position="45,50" size="80,80" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="Blue-Line-OCT-4HDF/icons/input_info.png" position="45,50" size="80,80" alphatest="blend" />
+    <widget name="ErrorPixmap" pixmap="Blue-Line-OCT-4HDF/skin_default/icons/input_error.png" position="45,50" size="80,80" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="Blue-Line-OCT-4HDF/skin_default/icons/input_question.png" position="45,50" size="80,80" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="Blue-Line-OCT-4HDF/skin_default/icons/input_info.png" position="45,50" size="80,80" alphatest="blend" />
     <eLabel position="165,21" size="1020,140" backgroundColor="background" zPosition="-1" />
     <widget name="list" position="15,175" size="1170,315" itemHeight="45" font="Regular;30" scrollbarMode="showOnDemand" transparent="1" />
     <applet type="onLayoutFinish">
@@ -4321,17 +4322,19 @@
   <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
     <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
   </widget>
+  <eLabel text="Skinanpassungen " position="30,573" size="600,40" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="black" halign="left" foregroundColor="cyan1" />
   <ePixmap position="1275,600" size="300,169" zPosition="2" pixmap="Blue-Line-OCT-4HDF/DEV/Channel-Selection-2-Felder.png" transparent="1" alphatest="blend" />
   <ePixmap position="1275,800" size="300,169" zPosition="2" pixmap="Blue-Line-OCT-4HDF/DEV/Infobar-FlipClock.png" transparent="1" alphatest="blend" />
   <ePixmap position="1593,600" size="300,169" zPosition="2" pixmap="Blue-Line-OCT-4HDF/DEV/Channel-Selection-3-Felder.png" transparent="1" alphatest="blend" />
   <ePixmap position="1591,800" size="300,169" zPosition="2" pixmap="Blue-Line-OCT-4HDF/DEV/SecondInfoBar-Horizontal.png" transparent="1" alphatest="blend" />
   <ePixmap pixmap="Blue-Line-OCT-4HDF/DEV/Blue_Line_logo_mini.png" position="1262,130" size="124,74" zPosition="10" transparent="1" alphatest="blend" />
   <eLabel position="1275,232" size="620,350" backgroundColor="background" zPosition="1" />
-  <eLabel text="Menu/Einstellungen/Oberfläche/Benutzeroberfläche Einstellungen  2. Infobar Programmmminformationen ändern in 2nd Infobar INFO. Von System Plugins laden wir uns den WeatherComponentHandler runter. WeatherComponentHandler/Menu, dann Grün Hinzufügen. Wenn ihr den Ort Eingegeben habt, ein mal runter auf Location-Code. Gelb für Code suchen, mit Grün (OK)bestätigen, wichtig wieder OK. Noch wichtiger mit Rot zurück, sonst müsst ihr wieder von vorne anfangen. Jetzt mit Exit beenden, Benutzer Oberfläche neustarten, eventuell kompletter Neustart." position="30,738" size="1190,230" zPosition="2" font="Regular; 27" transparent="1" backgroundColor="black" halign="left" foregroundColor="foregroundClock" valign="center" />
+  <eLabel text="Für weniger Transparenz in der Benutzeroberfläche, in /usr/share/enigma2/Blue-Line-OCT-4HDF/DEV/ diePixmaps: bg1280.png und bg1920.png kopieren und in /usr/share/enigma2/Blue-Line-OCT-4HDF/menu einfügen. -  Benutzer Oberfläche neustarten." position="30,807" size="1190,160" zPosition="2" font="Regular; 30" transparent="1" backgroundColor="black" halign="left" foregroundColor="foregroundClock" valign="center" />
   <eLabel text="Preview" position="1413,130" size="480,70" font="Regular;40" halign="left" valign="center" backgroundColor="bluelabel" transparent="1" zPosition="2" />
-  <ePixmap pixmap="Blue-Line-OCT-4HDF/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
-  <eLabel name="vertikalline" position="30,579" size="649,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-  <eLabel name="vertikalline" position="30,735" size="649,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+  <ePixmap pixmap="Blue-Line-OCT-4HDF/menu/bg1920.png" position="0,1" zPosition="-20" size="1920,1080" />
+  <eLabel name="vertikalline" position="30,619" size="400,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+  <eLabel name="vertikalline" position="31,532" size="1200,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+  <eLabel name="vertikalline" position="30,800" size="400,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
   <eLabel name="vertikalline" position="1251,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
   <eLabel name="vertikalline" position="1262,220" size="649,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
   <ePixmap pixmap="Blue-Line-OCT-4HDF/buttons/key_ok.png" position="312,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
@@ -4339,9 +4342,8 @@
   <ePixmap pixmap="Blue-Line-OCT-4HDF/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
   <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
   <ePixmap position="961,203" size="256,256" zPosition="2" pixmap="Blue-Line-OCT-4HDF/icons/menu_osd_menu_skin_setup.png" transparent="1" alphatest="blend" />
-  <eLabel text="Wetteranzeige in der 2.Infobar" position="30,694" size="600,40" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="black" halign="left" foregroundColor="bluetitle" />
-  <eLabel text="Ändern der 1. und 2. Infobar, Kanalliste" position="30,538" size="800,40" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="black" halign="left" foregroundColor="bluetitle" />
-  <eLabel text="In /usr/share/enigma2/Blue-Line-OCT-4HDF/DEV/ ist eine “Skinparts BlueLine.exe”, diese öffnen. Die jeweilige xml umbenennen in skin.xml und die skin.xml in /usr/share/enigma2/Blue-Line-OCT-4HDF/ ersetzen. Benutzer Oberfläche neustarten" position="30,582" size="1190,100" zPosition="2" font="Regular; 27" transparent="1" backgroundColor="black" halign="left" foregroundColor="foregroundClock" valign="center" />
+  <eLabel text="Ändern der Transparenz " position="30,754" size="600,40" zPosition="2" font="Regular; 34" transparent="1" backgroundColor="black" halign="left" foregroundColor="cyan1" />
+  <eLabel text="Dieser Skin kann in   Menü -&gt; Einstellungen -&gt; Bedienung und Oberfläche, angepasst werden. Dort findet ihr auch Infos zum Einstellen Des Wetters in der 2en Infobar." position="30,635" size="1220,100" zPosition="2" font="Regular; 30" transparent="1" backgroundColor="black" halign="left" foregroundColor="foregroundClock" />
 </screen>
   <!-- User Positioner Interface FHD -->
   <!-- ServiceInfo FHD -->
@@ -5185,9 +5187,9 @@
     </widget>
     <ePixmap position="975,687" size="256,256" zPosition="2" pixmap="Blue-Line-OCT-4HDF/icons/menu_system_VFD_INI.png" transparent="1" />
     <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-    <widget name="ErrorPixmap" pixmap="Blue-Line-OCT-4HDF/icons/input_error.png" position="70,200" size="80,80" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="Blue-Line-OCT-4HDF/icons/input_question.png" position="72,200" size="80,80" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="Blue-Line-OCT-4HDF/icons/input_info.png" position="70,200" size="80,80" alphatest="blend" />
+    <widget name="ErrorPixmap" pixmap="Blue-Line-OCT-4HDF/skin_default/icons/input_error.png" position="70,200" size="80,80" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="Blue-Line-OCT-4HDF/skin_default/icons/input_question.png" position="72,200" size="80,80" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="Blue-Line-OCT-4HDF/skin_default/icons/input_info.png" position="70,200" size="80,80" alphatest="blend" />
     <widget name="text" position="70,280" size="640,270" font="Regular;30" foregroundColor="lightblue" backgroundColor="dark" transparent="1" zPosition="1" />
     <widget source="list" render="Listbox" position="70,320" size="820,400" scrollbarMode="showOnDemand" foregroundColor="lightblue" backgroundColor="dark" transparent="1" zPosition="1">
       <convert type="TemplatedMultiContent">
@@ -5370,9 +5372,9 @@
   <!-- MessageBox FHD -->
   <screen name="MessageBox" title="Message" position="510,255" size="900,100">
     <widget name="text" position="120,10" size="620,80" font="Regular;32" halign="center" valign="center" foregroundColor="white" backgroundColor="dark" transparent="1" zPosition="1" />
-    <widget name="ErrorPixmap" pixmap="Blue-Line-OCT-4HDF/icons/input_error.png" position="20,25" size="80,80" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="Blue-Line-OCT-4HDF/icons/input_question.png" position="20,25" size="80,80" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="Blue-Line-OCT-4HDF/icons/input_info.png" position="20,25" size="80,80" alphatest="blend" />
+    <widget name="ErrorPixmap" pixmap="Blue-Line-OCT-4HDF/skin_default/icons/input_error.png" position="20,25" size="80,80" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="Blue-Line-OCT-4HDF/skin_default/icons/input_question.png" position="20,25" size="80,80" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="Blue-Line-OCT-4HDF/skin_default/icons/input_info.png" position="20,25" size="80,80" alphatest="blend" />
     <widget name="list" position="26,100" font="Regular;30" size="860,350" itemHeight="35" transparent="1" />
     <applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
@@ -5410,9 +5412,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <!-- MessageBoxSimple FHD -->
   <screen name="MessageBoxSimple" title="Message" position="center,255" size="900,100">
-    <widget name="ErrorPixmap" pixmap="Blue-Line-OCT-4HDF/icons/input_error.png" position="10,10" size="80,80" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="Blue-Line-OCT-4HDF/icons/input_question.png" position="10,10" size="80,80" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="Blue-Line-OCT-4HDF/icons/input_info.png" position="10,10" size="80,80" alphatest="blend" />
+    <widget name="ErrorPixmap" pixmap="Blue-Line-OCT-4HDF/skin_default/icons/input_error.png" position="10,10" size="80,80" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="Blue-Line-OCT-4HDF/skin_default/icons/input_question.png" position="10,10" size="80,80" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="Blue-Line-OCT-4HDF/skin_default/icons/input_info.png" position="10,10" size="80,80" alphatest="blend" />
     <widget name="text" position="140,20" size="720,80" font="Regular;36" halign="center" foregroundColor="lightblue" backgroundColor="dark" transparent="1" />
     <widget name="list" position="30,120" size="840,350" font="Regular;30" itemHeight="40" transparent="1" />
     <applet type="onLayoutFinish">
@@ -6885,4 +6887,88 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget source="key_yellow" render="Label" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget source="key_blue" render="Label" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
   </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="WeatherLocationChoiceList" position="0,0" size="1920,1080" title="Location list">
+<ePixmap pixmap="Blue-Line-OCT-4HDF/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+<widget source="global.CurrentTime" render="Label" position="508,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+<convert type="ClockToText">Format:%a, %d.%m.%Y %H:%M</convert>
+</widget>
+<widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+<ePixmap position="981,699" size="256,256" zPosition="2" pixmap="Blue-Line-OCT-4HDF/icons/net.png" transparent="1" />
+<eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+<widget name="choicelist" position="30,130" size="875,800" itemHeight="40" font="Regular;32" scrollbarMode="showOnDemand" scrollbarWidth="6" transparent="1" />
+<ePixmap pixmap="Blue-Line-OCT-4HDF/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+<ePixmap pixmap="Blue-Line-OCT-4HDF/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+<ePixmap pixmap="Blue-Line-OCT-4HDF/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
+<ePixmap pixmap="Blue-Line-OCT-4HDF/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
+<widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+<widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+<widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+<widget name="key_blue" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+</screen>
+<screen backgroundColor="transparent" flags="wfNoBorder" name="AtileHD_Config" position="0,0" size="1280,1080" title="AtileHD Setup">
+<ePixmap pixmap="Blue-Line-OCT-4HDF/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+<widget source="global.CurrentTime" render="Label" position="508,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+<convert type="ClockToText">Format:%a, %d.%m.%Y %H:%M</convert>
+</widget>
+<widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+<widget name="config" position="33,232" size="875,45" font="Regular; 36" itemHeight="45" enableWrapAround="1" backgroundColor="dark" transparent="1" />
+<ePixmap pixmap="Blue-Line-OCT-4HDF/buttons/key_blue.png" position="47,424" size="35,35" alphatest="blend" />
+<eLabel text="Help, Skin Einstellungen (Wetter)" position="92,423" size="620,40" font="Regular; 30" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="cyan1" />
+<eLabel text="/ Speichern" position="374,1000" size="160,70" font="Regular; 27" halign="center" backgroundColor="black" transparent="1" valign="center" />
+<eLabel text="Gelbe Taste Drücken, um die Skinparts auszuwählen" position="92,359" size="820,40" font="Regular; 30" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="cyan1" />
+<ePixmap position="971,676" size="256,256" zPosition="2" pixmap="Blue-Line-OCT-4HDF/icons/menu_extended_display_selection.png" transparent="1" />
+<eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+
+<ePixmap pixmap="Blue-Line-OCT-4HDF/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+<ePixmap pixmap="Blue-Line-OCT-4HDF/buttons/key_green.png" position="280,1018" size="35,35" alphatest="blend" />
+<ePixmap pixmap="Blue-Line-OCT-4HDF/buttons/key_yellow.png" position="555,1018" size="35,35" alphatest="blend" />
+<ePixmap pixmap="Blue-Line-OCT-4HDF/buttons/key_yellow.png" position="47,362" size="35,35" alphatest="blend" />
+<ePixmap pixmap="Blue-Line-OCT-4HDF/buttons/key_blue.png" position="1007,1018" size="35,35" alphatest="blend" />
+<widget name="key_red" position="67,1000" size="200,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+<widget name="key_green" position="324,1000" size="100,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+<widget name="key_yellow" position="600,1000" size="400,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+<widget name="key_blue" position="1055,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+<widget name="Picture" position="808,342" size="400,225" alphatest="on" />
+</screen>
+<screen backgroundColor="transparent" flags="wfNoBorder" name="AtileHDScreens" position="0,0" size="1920,1080" title="AtileHD Setup">
+<ePixmap pixmap="Blue-Line-OCT-4HDF/menu/bg1920.png" position="1,0" zPosition="-20" size="1920,1104" />
+<widget source="global.CurrentTime" render="Label" position="1088,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+<convert type="ClockToText">Format:%a, %d.%m.%Y %H:%M</convert>
+</widget>
+<widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+<ePixmap position="1590,700" size="256,256" zPosition="2" pixmap="Blue-Line-OCT-4HDF/icons/menu_system_videofinetune_setup.png" transparent="1" />
+<eLabel name="vertikalline" position="1212,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+<widget source="menu" render="Listbox" position="118,153" size="970,780" scrollbarMode="showOnDemand" scrollbarWidth="6" enableWrapAround="1" transparent="1">
+<convert type="TemplatedMultiContent">
+{"template":
+[
+MultiContentEntryPixmapAlphaTest(pos = (15, 13), size = (40, 40), png = 2),
+MultiContentEntryText(pos = (70, 0), size = (850, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+],
+"fonts": [gFont("Regular", 34),gFont("Regular", 30)],
+"itemHeight": 50
+}
+</convert>
+</widget>
+<eLabel text="zurück" position="67,1000" size="220,70" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="white" />
+<eLabel text="Preview" position="1266,129" size="610,70" font="Regular;40" halign="center" valign="center" transparent="0" zPosition="2" />
+<eLabel text="/Wählen" position="433,1000" size="220,70" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="white" />
+<widget name="Picture" position="1265,198" size="612,344" alphatest="on" />
+<ePixmap pixmap="Blue-Line-OCT-4HDF/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+<ePixmap pixmap="Blue-Line-OCT-4HDF/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+<widget source="key_red" render="Label" position="68,1002" size="1,1" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+<widget source="key_green" render="Label" position="372,1000" size="80,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+</screen>
+<screen name="AtileHD_About" position="0,0" size="1920,1080" title="AtileHD_About" flags="wfNoBorder" backgroundColor="transparent">
+<eLabel text="Skin Informationen" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" halign="left" transparent="1" zPosition="1" />
+<ePixmap pixmap="Blue-Line-OCT-4HDF/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+<widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+<convert type="ClockToText">Format:%a, %d.%m.%Y %H:%M</convert>
+</widget>
+<eLabel text="Für die Wetteranzeige in der 2.nd Infobar sind einige Schritte nötig." position="39,562" size="1230,40" zPosition="1" font="Regular; 35" halign="left" foregroundColor="cyan1" backgroundColor="background" transparent="1" />
+<eLabel position="39,609" size="1190,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+<ePixmap position="40,121" size="613,344" zPosition="10" pixmap="Blue-Line-OCT-4HDF/DEV/Blue_Line_logo.png" transparent="1" alphatest="blend" />
+<ePixmap position="939,158" size="256,256" zPosition="10" pixmap="Blue-Line-OCT-4HDF/icons/hdf_logo.png" transparent="1" alphatest="blend" />
+<eLabel text="Menu/Einstellungen/Oberfläche/Benutzeroberfläche Einstellungen  2. Infobar Programmmminformationen ändern in 2nd Infobar INFO. Von System Plugins laden wir uns den WeatherComponentHandler runter. WeatherComponentHandler/Menu, dann Grün Hinzufügen. Wenn ihr den Ort Eingegeben habt, ein mal runter auf Location-Code. Gelb für Code suchen, mit Grün (OK)bestätigen, wichtig wieder OK. Noch wichtiger mit Rot zurück, sonst müsst ihr wieder von vorne anfangen. Jetzt mit Exit beenden, Benutzer Oberfläche neustarten, eventuell kompletter Neustart." position="40,624" size="1190,350" zPosition="2" font="Regular; 32" transparent="1" backgroundColor="black" halign="left" foregroundColor="foregroundClock" valign="center" />
+</screen>
  </skin>

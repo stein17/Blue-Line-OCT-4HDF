@@ -3633,7 +3633,7 @@ self.instance.move(ePoint(0,0))
     <convert type="EMCMovieInfo">FileSize</convert>
   </widget>
   <ePixmap position="1727,113" zPosition="1" size="180,196" alphatest="blend" pixmap="Blue-Line-OCT-4HDF/mmp/play_emc.png" />
-  <widget name="list" position="30,215" size="1172,760" itemHeight="43" CoolFont="Regular;30" CoolSelectFont="Regular;26" CoolDateFont="Regular;30" CoolSelNumTxtWidth="39" CoolProgressPos="53" CoolProgressHPos="2" CoolIconPos="8" CoolIconHPos="10" CoolIconSize="36,36" CoolBarPos="48" CoolBarHPos="18" CoolBarSize="75,15" CoolBarSizeSa="75,15" CoolMoviePos="132" CoolMovieHPos="2" CoolMovieSize="749" CoolFolderSize="777" CoolDatePos="950" CoolDateHPos="2" CoolDateWidth="200" CoolPiconPos="132" CoolPiconHPos="3" CoolPiconWidth="66" CoolPiconHeight="39" CoolMoviePiconPos="206" CoolMoviePiconSize="675" CoolCSWidth="210" CoolDirInfoWidth="210" CoolCSPos="837" CoolTitleColor="1" CoolDateColor="1" CoolHighlightColor="1" DefaultColor="white" TitleColor="white" DateColor="white" UnwatchedColor="white" WatchingColor="yellow" FinishedColor="green" RecordingColor="red" BackColor="black" BackColorSel="backgroundBlue" FrontColorSel="lightblue" backgroundColorSelected="bluelabel" foregroundColorSelected="cyan" backgroundColor="black" foregroundColor="white" scrollbarMode="showOnDemand" transparent="1" />
+  <widget name="list" position="30,215" size="1172,760" itemHeight="43" CoolFont="Regular;30" CoolSelectFont="Regular;26" CoolDateFont="Regular;30" CoolSelNumTxtWidth="39" CoolProgressPos="53" CoolProgressHPos="2" CoolIconPos="8" CoolIconHPos="10" CoolIconSize="36,36" CoolBarPos="48" CoolBarHPos="18" CoolBarSize="75,15" CoolBarSizeSa="75,15" CoolMoviePos="132" CoolMovieHPos="2" CoolMovieSize="749" CoolFolderSize="777" CoolDatePos="930" CoolDateHPos="2" CoolDateWidth="250" CoolPiconPos="132" CoolPiconHPos="3" CoolPiconWidth="66" CoolPiconHeight="39" CoolMoviePiconPos="206" CoolMoviePiconSize="675" CoolCSWidth="210" CoolDirInfoWidth="210" CoolCSPos="837" CoolTitleColor="1" CoolDateColor="1" CoolHighlightColor="1" DefaultColor="white" TitleColor="white" DateColor="white" UnwatchedColor="white" WatchingColor="yellow" FinishedColor="green" RecordingColor="red" BackColor="black" BackColorSel="backgroundBlue" FrontColorSel="lightblue" backgroundColorSelected="bluelabel" foregroundColorSelected="cyan" backgroundColor="black" foregroundColor="white" scrollbarMode="showOnDemand" transparent="1" />
   <widget source="Service" render="Label" position="1256,181" size="450,82" font="Regular;33" backgroundColor="background" foregroundColor="cyan1" transparent="1">
     <convert type="EMCEventName">Name</convert>
   </widget>
@@ -4658,7 +4658,7 @@ self.instance.move(ePoint(0,0))
     <widget source="Title" render="Label" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
     <ePixmap position="973,678" size="256,256" pixmap="Blue-Line-OCT-4HDF/icons/chefkoch.png" transparent="1" alphatest="blend" />
     <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-    <widget name="config" position="30,130" size="880,820" font="Regular;28" itemHeight="40" scrollbarMode="showOnDemand" backgroundColorSelected="backgroundBlue" zPosition="1" backgroundColor="background" transparent="1" />
+<widget name="config" position="30,130" size="880,820" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" backgroundColorSelected="backgroundBlue" foregroundColor="white" foregroundColorSelected="backgroundBlue" zPosition="1" backgroundColor="background" transparent="1" />
     <ePixmap pixmap="Blue-Line-OCT-4HDF/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="Blue-Line-OCT-4HDF/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
     <eLabel text="Abbrechen" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
@@ -4897,7 +4897,7 @@ self.instance.move(ePoint(0,0))
     <widget source="Title" render="Label" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" backgroundColor="black" halign="left" transparent="1" zPosition="1" />
     <ePixmap position="971,673" size="256,256" pixmap="Blue-Line-OCT-4HDF/icons/frag_mutti.png" transparent="1" alphatest="blend" />
     <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-    <widget name="config" position="36,137" size="860,780" font="Regular;28" itemHeight="40" scrollbarMode="showOnDemand" backgroundColorSelected="backgroundBlue" zPosition="1" backgroundColor="background" transparent="1" />
+     <widget name="config" position="30,130" size="880,820" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" backgroundColorSelected="backgroundBlue" foregroundColor="white" foregroundColorSelected="white" zPosition="1" backgroundColor="background" transparent="1" />
     <ePixmap pixmap="Blue-Line-OCT-4HDF/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="Blue-Line-OCT-4HDF/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
     <eLabel text="Cancel" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
@@ -7661,6 +7661,17 @@ self.instance.move(ePoint(0,0))
   <ePixmap position="981,699" size="256,256" zPosition="2" pixmap="Blue-Line-OCT-4HDF/icons/menu_extended_subtitle_setup.png" transparent="1" />
   <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
   <widget name="config" itemHeight="50" font="Regular; 30" position="25,113" size="880,850" transparent="1" />
+</screen>
+<screen name="kickerMain" position="center,80" size="270,590" title="kicker">
+ <ePixmap position="0,0" size="270,60" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/kicker/pic/menuHD.png" alphatest="blend" zPosition="1" /> 
+ <widget name="mainmenu" position="10,70" size="250,420" scrollbarMode="showNever" zPosition="2" />
+ <widget name="secondmenu" position="10,70" size="250,510" scrollbarMode="showNever" zPosition="2" />
+ <widget name="thirdmenu" position="10,70" size="250,510" scrollbarMode="showNever" zPosition="2" />
+</screen>
+
+<screen name="tickerMain" position="center,80" size="360,580" title="Live-Ticker">
+<ePixmap position="0,0" size="360,60" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/kicker/pic/ticker_menuHD.png" alphatest="blend" zPosition="1" />
+<widget name="menu" position="10,70" size="340,500" scrollbarMode="showNever" zPosition="2" />
 </screen>
 
 </skin>
