@@ -285,6 +285,25 @@
     <eLabel backgroundColor="backgroundBlue" position="411,294" size="2,21" />
     <eLabel backgroundColor="backgroundBlue" position="411,53" size="2,21" />
   </screen>
+          <!-- NumberZapExt With Picon FHD -->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="NumberZapPicon" position="396,324" size="1071,365" title="QuickZap">
+  <widget alphatest="blend" position="564,71" render="BLXPicon" size="324,182" source="Service" transparent="1" zPosition="1">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+  <widget name="number" position="101,108" size="300,150" halign="center" valign="center" font="Regular;120" backgroundColor="background" foregroundColor="cyan1" borderColor="backgroundBlue" borderWidth="7"/>
+  <widget name="servicename" position="434,269" size="601,42" halign="center" valign="center" font="Regular;40" backgroundColor="background" foregroundColor="cyan1" borderColor="backgroundBlue" borderWidth="3"/>
+  <eLabel halign="center" position="407,48" size="641,272" zPosition="-1" />
+  <eLabel halign="center" position="69,69" size="338,231" zPosition="-1" />
+  <eLabel backgroundColor="backgroundBlue" position="74,74" size="2,221" />
+  <eLabel backgroundColor="backgroundBlue" position="74,74" size="353,2" />
+  <eLabel backgroundColor="backgroundBlue" position="426,74" size="2,221" />
+  <eLabel backgroundColor="backgroundBlue" position="74,293" size="353,2" />
+  <eLabel backgroundColor="backgroundBlue" position="411,314" size="630,2" />
+  <eLabel backgroundColor="backgroundBlue" position="411,294" size="2,21" />
+  <eLabel backgroundColor="backgroundBlue" position="411,53" size="2,21" />
+  <eLabel backgroundColor="backgroundBlue" position="1041,53" size="2,263" />
+  <eLabel backgroundColor="backgroundBlue" position="411,53" size="630,2" />
+</screen>
   <!-- TextBox FHD -->
   <screen name="TextBox" position="center,center" size="900,400" title="Message...">
     <widget name="text" position="10,5" size="880,380" font="Regular;32" foregroundColor="white" transparent="1" />
