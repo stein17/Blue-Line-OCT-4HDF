@@ -1,4 +1,4 @@
-    <skin>
+   <skin>
  <!--  skin_Infobar_FullInfo_with_AnalogClock-->
 <screen name="InfoBar" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" borderWidth="0" borderColor="transparent">
  <!--  <ePixmap pixmap="Blue-Line-OCT-4HDF/menu/InfobarOCTFlip.png" position="0,780" zPosition="-1" size="1920,290" /> -->
