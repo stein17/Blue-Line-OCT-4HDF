@@ -60,13 +60,13 @@
     <widget source="global.CurrentTime" render="Label" position="1819,818" size="100,22" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" foregroundColor="foregroundClock">
     <convert type="ClockToText">Format:%H:%M:%S</convert>
     </widget>
-    <widget source="global.CurrentTime" render="AXBlueWatches" position="1699,887" size="100,100" zPosition="4" foregroundColor="red" alphatest="blend">
+    <widget source="global.CurrentTime" render="BLWatches" position="1699,887" size="100,100" zPosition="4" foregroundColor="red" alphatest="blend">
       <convert type="BLAnalogClock">secHand</convert>
     </widget>
-    <widget source="global.CurrentTime" render="AXBlueWatches" position="1699,887" size="100,100" zPosition="3" foregroundColor="grey" alphatest="blend">
+    <widget source="global.CurrentTime" render="BLWatches" position="1699,887" size="100,100" zPosition="3" foregroundColor="grey" alphatest="blend">
       <convert type="BLAnalogClock">minHand</convert>
     </widget>
-    <widget source="global.CurrentTime" render="AXBlueWatches" position="1709,897" size="80,80" zPosition="2" foregroundColor="grey" alphatest="blend">
+    <widget source="global.CurrentTime" render="BLWatches" position="1709,897" size="80,80" zPosition="2" foregroundColor="grey" alphatest="blend">
       <convert type="BLAnalogClock">hourHand</convert>
     </widget> -->
 	
@@ -428,7 +428,6 @@
     <eLabel text="F" position="246,1031" zPosition="2" size="26,27" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="black" transparent="0" valign="center" />
     <eLabel text="G" position="276,1031" zPosition="2" size="26,27" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="black" transparent="0" valign="center" />
     <eLabel text="H" position="306,1031" zPosition="2" size="26,27" font="Regular; 30" halign="center" foregroundColor="darkgrey" backgroundColor="black" transparent="0" valign="center" />
-
 
 </screen>
 </skin>
